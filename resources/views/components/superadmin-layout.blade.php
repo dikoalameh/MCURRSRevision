@@ -150,7 +150,7 @@
         }
 
         function outsideClick(event) {
-            if (event.target.id === 'filterModal') {
+            if ((event.target.id === 'addUserModal') || (event.target.id === 'roleFilterModal')) {
 
                 // PREVENTS TO CLOSE SIDEBAR
                 event.stopPropagation();

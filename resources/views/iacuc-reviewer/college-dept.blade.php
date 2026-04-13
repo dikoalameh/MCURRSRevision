@@ -51,6 +51,21 @@
                 <x-input-error :messages="$errors->get('Reviewer_Prog')" class="mt-2" />
             </div>
 
+            <!-- Non-medical or Medical -->
+            <div class="mt-4">
+                <x-input-label for="reviewer_type" :value="__('Type of Reviewer')" />
+                <div class="mt-2 flex align-center gap-x-5">
+                    <div>
+                        <input type="radio" id="non-medical" name="reviewer_type" value="Non-medical">
+                        <label for="non-medical" class="text-primary">Non-medical</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medical" name="reviewer_type" value="Medical">
+                        <label for="medical" class="text-primary">Medical</label>
+                    </div>
+                </div>
+            </div>
+
             <button type="submit"
                 class="mt-4 bg-secondary hover:bg-primary px-4 py-2 text-primary hover:text-secondary uppercase tracking-widest duration-200 rounded-lg">
                 Submit

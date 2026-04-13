@@ -19,7 +19,8 @@
 
 <body class="bg-gray-50 flex items-center justify-center min-h-screen">
 
-    <div class="w-full max-w-md mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden rounded-lg bg-white">
+    <div
+        class="w-full max-w-md mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden rounded-lg bg-white">
 
         <form method="POST" action="{{ route('erb-reviewer.college-dept.store') }}">
             @csrf
@@ -43,12 +44,26 @@
             <div class="mt-2">
                 <x-input-label for="reviewer_Dept" :value="__('Department')" />
                 <div id="departmentWrapper">
-                    <select id="department" name="Reviewer_Prog"
-                        class="w-full text-sm mt-1 border-gray rounded-md">
+                    <select id="department" name="Reviewer_Prog" class="w-full text-sm mt-1 border-gray rounded-md">
                         <option value="" disabled selected>-- Select Department --</option>
                     </select>
                 </div>
                 <x-input-error :messages="$errors->get('Reviewer_Prog')" class="mt-2" />
+            </div>
+
+            <!-- Non-medical or Medical -->
+            <div class="mt-4">
+                <x-input-label for="reviewer_type" :value="__('Type of Reviewer')" />
+                <div class="mt-2 flex align-center gap-x-5">
+                    <div>
+                        <input type="radio" id="non-medical" name="reviewer_type" value="Non-medical">
+                        <label for="non-medical" class="text-primary">Non-medical</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medical" name="reviewer_type" value="Medical">
+                        <label for="medical" class="text-primary">Medical</label>
+                    </div>
+                </div>
             </div>
 
             <button type="submit"
@@ -112,4 +127,5 @@
         }
     </script>
 </body>
+
 </html>

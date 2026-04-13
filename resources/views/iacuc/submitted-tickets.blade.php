@@ -1,5 +1,5 @@
 @section('title', 'Submitted Inquiries')
-<x-erb-layout>
+<x-iacuc-layout>
     <div id="filterModal" onclick="outsideClick(event)"
         class="fixed inset-0 bg-black z-[9999] bg-opacity-50 hidden items-center justify-center overflow-auto overscroll-contain">
         <div class="relative flex items-center justify-center bg-white w-[400px] p-6 rounded-[10px] shadow-md">
@@ -41,7 +41,12 @@
         <br>
 
         <!-- CSS NG FILTER + SEARCH BAR -->
-        <div class="top-controls flex items-center justify-end max-md:flex-col">
+        <div class="top-controls flex items-center justify-between max-md:flex-col">
+            <!-- FUNCTIONALITY TO DISPLAY THE DATAS BASED ON DATE -->
+            <div class="filter-box">
+                Total Submission Count:
+                <span class="font-bold" id="submissionCount"></span>
+            </div>
             <div class="flex items-center max-sm:block max-sm:text-center max-md:mt-2">
                 <button type="button" onclick="openModal('filterModal')" class="bg-primary text-white p-1.5 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -66,33 +71,32 @@
                 </tr>
             </thead>
             <tbody class="text-base/7 max-lg:text-sm/6">
-                @forelse($inquiries as $inquiry)
-                    <tr data-date="{!! $inquiry['date_submitted']->format('Y-m-d') !!}">
-                        <td>{{ $inquiry['pi_name'] }}</td>
-                        <td>{{ $inquiry['research_title'] }}</td>
-                        <td>{{ $inquiry['subject'] }}</td>
-                        <td>
-                            {!! $inquiry['date_submitted']->format('m/d/Y') !!}<br>
-                            {!! $inquiry['date_submitted']->format('h:i:s A') !!}
-                        </td>
-                        <td>
-                            <a href="{{ url('erb/tickets/' . $inquiry['ticket_id']) }}">
-                                <button type="button" class="border-2 p-[5px] hover:bg-gray">
-                                    View
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
-                @empty
-                @endforelse
+                <tr>
+                    <td>John Doe</td>
+                    <td>MCU-RRS</td>
+                    <td>Amendments</td>
+                    <td>
+                        4/11/2026<br>
+                        06:16:21 PM
+                    </td>
+                    <td>
+                        <a href="{{ url('iacuc/tickets/') }}">
+                            <button type="button" class="border-2 p-[5px] hover:bg-gray">
+                                View
+                            </button>
+                        </a>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </main>
-</x-erb-layout>
+</x-iacuc-layout>
 <script>
     const fromDate = document.getElementById('fromDate');
     const toDate = document.getElementById('toDate');
-    
+    const countSpan = document.getElementById("submissionCount");
+
+    // ✅ Register BEFORE DataTable initializes (this runs first since it's in the slot)
     $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
         if (settings.nTable.id !== 'myTable') return true;
 
@@ -113,5 +117,11 @@
     function updateTable() {
         const table = $('#myTable').DataTable();
         table.draw();
+        countSpan.textContent = table.rows({ search: 'applied' }).count();
     }
+
+    // ✅ Set initial count after DataTables is ready
+    $(document).ready(function () {
+        countSpan.textContent = $('#myTable').DataTable().rows().count();
+    });
 </script>

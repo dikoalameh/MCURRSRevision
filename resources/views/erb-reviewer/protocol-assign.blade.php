@@ -17,9 +17,10 @@
                     <th class="w-[25%]">Research Title</th>
                     <th class="w-[20%]">P.I. Name</th>
                     <th class="w-[15%]">Research Protocol</th>
-                    <th class="w-[15%]">Type of Review</th>
+                    <th class="w-[10%]">Type of Review</th>
                     <th class="w-[10%]">Forms</th>
                     <th class="w-[10%]">Soft Copy Submission</th>
+                    <th class="w-[10%]">Date Submitted</th>
                 </tr>
             </thead>
 
@@ -78,6 +79,10 @@
                                     </a>
                                 @endif
                             @endforeach
+                        </td>
+                        <td>
+                            04/13/2026<br>
+                            03:46:23 PM
                         </td>
                     </tr>
                 @endforeach

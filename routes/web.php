@@ -223,6 +223,11 @@ Route::middleware(['auth', 'access:IACUC Admin', 'no-cache', 'prevent-back'])->p
     // View Reviews
     Route::get('/view-reviews', [ERBViewReviews::class, 'iacucIndex'])->name('iacuc.view-reviews');
 
+    // Submitted Inquiries
+    Route::get('/submitted-tickets', function () {
+        return view('iacuc.submitted-tickets');
+    });
+
     // Settings
     Route::get('/settings', function () {
         return view('iacuc.settings');

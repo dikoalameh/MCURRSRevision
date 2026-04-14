@@ -35,14 +35,8 @@
                 </div>
             </div>
             <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
-                <p class="p-3 max-sm:text-sm/6">
-                    Please indicate <b>YES</b> or <b>NO</b> in the space provided whether or not the informed consent
-                    form (ICF) addresses the specified component of <b>NA</b> if Not Applicable. To facilitate the
-                    evaluation of the assessment point, indicate the page and paragraph where this information can be
-                    found.
-                </p>
-                <div class="p-3 mt-2 space-y-2 text-base max-sm:text-sm">
-                    <h2 class="py-2 font-semibold text-lg max-2xl:text-base max-sm:text-sm">TO BE FILLED UP BY P.I.
+                <div class="px-3 mt-2 space-y-2 text-base max-sm:text-sm">
+                    <h2 class="pb-2 font-semibold text-lg max-2xl:text-base max-sm:text-sm">TO BE FILLED UP BY P.I.
                     </h2>
 
                     <!-- Question 1 -->

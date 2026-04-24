@@ -100,7 +100,7 @@
                                                 <a href="{{ route($route, ['protocol' => $firstReview->protocol?->protocol_ID]) }}"
                                                     class="block mb-1">
                                                     <button
-                                                        class="border border-black p-1 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
+                                                        class="border border-black p-2 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
                                                         {{ $review->form->form_code ?? 'N/A' }}
                                                     </button>
                                                 </a>
@@ -120,7 +120,7 @@
                                             <a href="{{ route('erb-reviewer.submit-documents', ['form' => $review->form->form_id]) }}"
                                                 class="block mb-1">
                                                 <button
-                                                    class="border border-black p-1 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
+                                                    class="border border-black p-2 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
                                                     Submit {{ $review->form->form_code ?? '' }}
                                                 </button>
                                             </a>

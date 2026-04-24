@@ -77,12 +77,12 @@
 
                         @else
                             {{-- ACCEPTED: Show Forms and Submissions in a single column --}}
-                            <td class="p-2 border-l">
+                            <td>
                                 @php $hasChecklistInDB = false; @endphp
 
                                 {{-- Forms Section --}}
                                 <div class="mb-2">
-                                    <div class="text-[10px] font-bold text-gray-600 mb-1 uppercase border-b pb-0.5">Forms to
+                                    <div class="text-xs font-bold mb-1 uppercase pb-0.5">Forms to
                                         Accomplish</div>
                                     @foreach($reviews as $review)
                                         @if($review->form?->form_type === 'Forms')
@@ -98,7 +98,7 @@
                                             @endphp
                                             <a href="{{ $url }}" class="block mb-1">
                                                 <button
-                                                    class="border border-black p-1 w-full text-[10px] font-bold hover:bg-black hover:text-white transition-all uppercase">
+                                                    class="border border-black p-2 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
                                                     {{ $formCode }}
                                                 </button>
                                             </a>
@@ -109,7 +109,7 @@
                                         <a href="{{ route('iacuc-reviewer.protocol-review-checklist', ['protocol' => $protocolId]) }}"
                                             class="block">
                                             <button
-                                                class="border border-black p-1 w-full text-[10px] font-bold hover:bg-black hover:text-white transition-all uppercase">
+                                                class="border border-black p-1 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
                                                 Protocol Review Checklist
                                             </button>
                                         </a>
@@ -118,14 +118,14 @@
 
                                 {{-- Submissions Section --}}
                                 <div>
-                                    <div class="text-[10px] font-bold text-gray-600 mb-1 uppercase border-b pb-0.5">Soft Copy
+                                    <div class="text-xs font-bold mb-1 uppercase pb-0.5">Soft Copy
                                         Submissions</div>
                                     @foreach($reviews as $review)
                                         @if($review->form?->form_type === 'Submission')
                                             <a href="{{ route('iacuc-reviewer.submit-documents', ['formId' => $review->form->form_id]) }}"
                                                 class="block mb-1">
                                                 <button
-                                                    class="border border-black p-1 w-full text-[10px] font-bold hover:bg-black hover:text-white transition-all uppercase">
+                                                    class="border border-black p-2 w-full text-xs font-bold hover:bg-gray transition-all uppercase">
                                                     Submit {{ $review->form->form_code }}
                                                 </button>
                                             </a>

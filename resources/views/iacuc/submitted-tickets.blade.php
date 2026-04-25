@@ -1,5 +1,5 @@
-@section('title', 'Monitoring Process')
-<x-erb-reviewer>
+@section('title', 'Submitted Inquiries')
+<x-iacuc-layout>
     <div id="filterModal" onclick="outsideClick(event)"
         class="fixed inset-0 bg-black z-[9999] bg-opacity-50 hidden items-center justify-center overflow-auto overscroll-contain">
         <div class="relative flex items-center justify-center bg-white w-[400px] p-6 rounded-[10px] shadow-md">
@@ -36,7 +36,7 @@
     <!-- Main Content -->
     <main class="xl:ml-[335px] max-xl:ml-auto p-4 max-md:p-2">
         <h2 class="max-xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
-            MONITORING PROCESS
+            SUBMITTED INQUIRIES
         </h2>
         <br>
 
@@ -56,30 +56,36 @@
         </div>
 
         <table id="myTable" class="display overflow-scroll border-collapse w-full">
-            <!-- Table header -->
             <thead class="bg-primary text-white text-lg/7 max-lg:text-base/7">
                 <tr class="header-table">
-                    <th class="w-[50%]">Description</th>
-                    <th class="w-[50%]">Process Date</th>
+                    <th class="w-[20%]">P.I. Name</th>
+                    <th class="w-[20%]">Research Title</th>
+                    <th class="w-[20%]">Subject</th>
+                    <th class="w-[20%]">Date Submitted</th>
+                    <th class="w-[20%]">View</th>
                 </tr>
             </thead>
-
-            <!-- Table body -->
             <tbody class="text-base/7 max-lg:text-sm/6">
-                @forelse($processes as $process)
-                    <tr data-date="{{ \Carbon\Carbon::parse($process['date'])->format('Y-m-d') }}">
-                        <td>{{ $process['description'] }}</td>
-                        <td>
-                            {{ $process['date'] }}<br>
-                            {{ $process['time'] }}
-                        </td>
-                    </tr>
-                @empty
-                @endforelse
+                <tr>
+                    <td>John Doe</td>
+                    <td>MCU-RRS</td>
+                    <td>Amendments</td>
+                    <td>
+                        04/11/2026<br>
+                        06:16:21 PM
+                    </td>
+                    <td>
+                        <a href="{{ url('iacuc/tickets/') }}">
+                            <button type="button" class="border-2 p-[5px] hover:bg-gray">
+                                View
+                            </button>
+                        </a>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </main>
-</x-erb-reviewer>
+</x-iacuc-layout>
 <script>
     const fromDate = document.getElementById('fromDate');
     const toDate = document.getElementById('toDate');
@@ -106,5 +112,11 @@
     function updateTable() {
         const table = $('#myTable').DataTable();
         table.draw();
+        countSpan.textContent = table.rows({ search: 'applied' }).count();
     }
+
+    // ✅ Set initial count after DataTables is ready
+    $(document).ready(function () {
+        countSpan.textContent = $('#myTable').DataTable().rows().count();
+    });
 </script>

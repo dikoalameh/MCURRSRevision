@@ -77,20 +77,8 @@
                                 Indicate of the study protocol contains the specified assessment point
                             </span>
                         </label>
-                        <div class="flex mt-1 space-x-1 gap-x-2">
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="recommendation" data-textbox="1">
-                                <span>Yes</span>
-                            </label>
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="recommendation">
-                                <span>N/A</span>
-                            </label>
-                        </div>
                         <textarea name="recommendation_indication" data-group="recommendation" id="1"
-                            class="mt-1 w-full resize-none max-md:text-sm" disabled></textarea>
+                            class="mt-1 w-full resize-none max-md:text-sm"></textarea>
                     </div>
                 </div>
                 <div class="p-3 space-y-2 max-sm:text-sm">
@@ -113,20 +101,8 @@
                                 Indicate of the study protocol contains the specified assessment point
                             </span>
                         </label>
-                        <div class="flex mt-1 space-x-1 gap-x-2">
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="protocol_related" data-textbox="2">
-                                <span>Yes</span>
-                            </label>
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="protocol_related">
-                                <span>N/A</span>
-                            </label>
-                        </div>
                         <textarea name="indicate_protocol_related" data-group="protocol_related" id="2"
-                            class="mt-1 w-full resize-none max-md:text-sm" disabled></textarea>
+                            class="mt-1 w-full resize-none max-md:text-sm"></textarea>
                     </div>
                     <div class="pl-4">
                         <label class="max-sm:py-1 flex items-start space-x-2 max-sm:text-sm/6">
@@ -158,20 +134,8 @@
                                 Indicate of the study protocol contains the specified assessment point
                             </span>
                         </label>
-                        <div class="flex mt-1 space-x-1 gap-x-2">
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="ethical_related" data-textbox="3">
-                                <span>Yes</span>
-                            </label>
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="ethical_related">
-                                <span>N/A</span>
-                            </label>
-                        </div>
                         <textarea name="indicate_ethical_issue" data-group="ethical_related" id="3"
-                            class="mt-1 w-full resize-none max-sm:text-sm" disabled></textarea>
+                            class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                     </div>
                     <div class="pl-4">
                         <label class="max-sm:py-1 flex items-start space-x-2 max-sm:text-sm/6">
@@ -203,20 +167,8 @@
                                 Indicate of the study protocol contains the specified assessment point
                             </span>
                         </label>
-                        <div class="flex mt-1 space-x-1 gap-x-2">
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="consent_related" data-textbox="4">
-                                <span>Yes</span>
-                            </label>
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="consent_related">
-                                <span>N/A</span>
-                            </label>
-                        </div>
                         <textarea name="indicate_consent_related" data-group="consent_related" id="4"
-                            class="mt-1 w-full resize-none max-sm:text-sm" disabled></textarea>
+                            class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                     </div>
                     <div class="pl-4">
                         <label class="max-sm:py-1 flex items-start space-x-2 max-sm:text-sm/6">
@@ -248,20 +200,8 @@
                                 Indicate of the study protocol contains the specified assessment point
                             </span>
                         </label>
-                        <div class="flex mt-1 space-x-1 gap-x-2">
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="initial_review_changes" data-textbox="5">
-                                <span>Yes</span>
-                            </label>
-                            <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                                <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
-                                    name="initial_review_changes">
-                                <span>N/A</span>
-                            </label>
-                        </div>
                         <textarea name="indicate_review_changes" data-group="initial_review_changes" id="5"
-                            class="mt-1 w-full resize-none max-sm:text-sm" disabled></textarea>
+                            class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                     </div>
                     <div class="pl-4">
                         <label class="max-sm:py-1 flex items-start space-x-2 max-sm:text-sm/6">

@@ -41,12 +41,7 @@
         <br>
 
         <!-- CSS NG FILTER + SEARCH BAR -->
-        <div class="top-controls flex items-center justify-between max-md:flex-col">
-            <!-- FUNCTIONALITY TO DISPLAY THE DATAS BASED ON DATE -->
-            <div class="filter-box">
-                Total Submission Count:
-                <span class="font-bold" id="submissionCount"></span>
-            </div>
+        <div class="top-controls flex items-center justify-end max-md:flex-col">
             <div class="flex items-center max-sm:block max-sm:text-center max-md:mt-2">
                 <button type="button" onclick="openModal('filterModal')" class="bg-primary text-white p-1.5 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -59,6 +54,7 @@
                 <div class="search-wrapper max-sm:mt-3 max-sm:justify-center max-sm:items-center"></div>
             </div>
         </div>
+
 
         <table id="myTable" class="display overflow-scroll border-collapse w-full">
             <!-- Table header -->
@@ -84,3 +80,30 @@
         </table>
     </main>
 </x-iacuc-reviewer>
+<script>
+    const fromDate = document.getElementById('fromDate');
+    const toDate = document.getElementById('toDate');
+
+    // ✅ Register BEFORE DataTable initializes (this runs first since it's in the slot)
+    $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+        if (settings.nTable.id !== 'myTable') return true;
+
+        const from = fromDate.value;
+        const to = toDate.value;
+
+        if (!from && !to) return true;
+
+        const row = settings.aoData[dataIndex].nTr;
+        const rowDate = row ? row.getAttribute('data-date') : '';
+
+        if (from && rowDate < from) return false;
+        if (to && rowDate > to) return false;
+
+        return true;
+    });
+
+    function updateTable() {
+        const table = $('#myTable').DataTable();
+        table.draw();
+    }
+</script>

@@ -46,65 +46,59 @@
                 <div class="p-3 mt-2 space-y-2 text-base max-sm:text-sm">
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Addition or removal of researchers (if yes, add details below)
                             </span>
-                            <textarea name="add_remove" id="textBox" class="mt-1 w-full resize-none max-sm:text-sm"
-                                disabled></textarea>
+                            <textarea name="add_remove" id="textBox"
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Addition of a new rsearch method (if yes, add the details below).
                             </span>
-                            <textarea name="add_methods" id="textBox" class="mt-1 w-full resize-none max-sm:text-sm"
-                                disabled></textarea>
+                            <textarea name="add_methods" id="textBox"
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Ask for additional data from your existing participants (if yes, add details below).
                             </span>
-                            <textarea name="additional_data" id="textBox" class="mt-1 w-full resize-none max-sm:text-sm"
-                                disabled></textarea>
+                            <textarea name="additional_data" id="textBox"
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Remove a group of participants or a research method from the project, and have not yet
                                 commenced that part of the project (if yes, add details below).
                             </span>
                             <textarea name="remove_participants" id="textBox"
-                                class="mt-1 w-full resize-none max-sm:text-sm" disabled></textarea>
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Minor changes to study documents such as spelling and grammar, correcting errors, or
                                 updates to contact details to reflect changes in the research team (if yes, briefly
                                 summarize below and attach copies).
                             </span>
-                            <textarea name="minor_changes" id="textBox" class="mt-1 w-full resize-none max-sm:text-sm"
-                                disabled></textarea>
+                            <textarea name="minor_changes" id="textBox"
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                     <div>
                         <label>
-                            <input type="checkbox" id="toggleCheckBox" class="check max-sm:w-[14px] max-sm:h-[14px]">
                             <span>
                                 Apply for an extension to your current ethical approval (if yes, add details below).
                             </span>
-                            <textarea name="extension" id="textBox" class="mt-1 w-full resize-none max-sm:text-sm"
-                                disabled></textarea>
+                            <textarea name="extension" id="textBox"
+                                class="mt-1 w-full resize-none max-sm:text-sm"></textarea>
                         </label>
                     </div>
                 </div>

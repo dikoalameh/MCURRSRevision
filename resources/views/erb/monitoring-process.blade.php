@@ -23,10 +23,9 @@
                             class="w-full max-md:text-sm h-[35px] leading-[15px] max-sm:h-[31px] max-sm:leading-[11px]">
                             <option value="" selected disabled>-- Choose type --</option>
                             <option value="Superadmin">Superadmin</option>
+                            <option value="System">System</option>
                             <option value="ERB Admin">ERB Admin</option>
                             <option value="ERB Reviewer">ERB Reviewer</option>
-                            <option value="IACUC Admin">IACUC Admin</option>
-                            <option value="IACUC Reviewer">IACUC Reviewer</option>
                             <option value="Principal Investigator">Principal Investigator</option>
                         </select>
                     </div>

@@ -33,7 +33,6 @@
 <body>
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         @include('student.navigation')
-        @include('student.faq')
 
         <!-- Page Heading -->
         @isset($header)

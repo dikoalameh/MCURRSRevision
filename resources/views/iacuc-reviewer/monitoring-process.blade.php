@@ -17,17 +17,13 @@
                 </div>
                 <div class="w-full">
                     <!-- CALENDAR FILTERING FOR THE COUNT OF SUBMISSION -->
-                    <div class="filter-box mt-4 flex items-center gap-x-2">
-                        <div>
-                            <label for="fromDate">From:</label>
-                            <input type="date" id="fromDate"
-                                class="w-full max-md:text-sm h-[35px] text-sm max-sm:h-[31px]">
-                        </div>
-                        <div>
-                            <label for="toDate">To:</label>
-                            <input type="date" id="toDate"
-                                class="w-full max-md:text-sm h-[35px] text-sm max-sm:h-[31px]">
-                        </div>
+                    <div class="mt-4">
+                        <label for="fromDate">From:</label>
+                        <input type="date" id="fromDate" class="w-full max-md:text-sm h-[35px] text-sm max-sm:h-[31px]">
+                    </div>
+                    <div class="mt-4">
+                        <label for="toDate">To:</label>
+                        <input type="date" id="toDate" class="w-full max-md:text-sm h-[35px] text-sm max-sm:h-[31px]">
                     </div>
                 </div>
                 <button type="button" onclick="updateTable(); closeModal('filterModal')"
@@ -90,7 +86,7 @@
 <script>
     const fromDate = document.getElementById('fromDate');
     const toDate = document.getElementById('toDate');
-    
+
     $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
         if (settings.nTable.id !== 'myTable') return true;
 

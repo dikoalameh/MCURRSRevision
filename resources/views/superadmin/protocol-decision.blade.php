@@ -22,7 +22,7 @@
                         <select id="statusFilter"
                             class="w-full max-md:text-sm h-[35px] leading-[15px] max-sm:h-[31px] max-sm:leading-[11px]">
                             <option value="" selected disabled>-- Choose status --</option>
-                            <option value="Completed">Completed</option>
+                            <option value="Accepted">Accepted</option>
                             <option value="Pending">Pending</option>
                         </select>
                     </div>

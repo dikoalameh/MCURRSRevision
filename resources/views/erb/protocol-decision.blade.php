@@ -23,6 +23,7 @@
                             class="w-full max-md:text-sm h-[35px] leading-[15px] max-sm:h-[31px] max-sm:leading-[11px]">
                             <option value="" selected disabled>-- Choose type -- </option>
                             <option value="Pending">Pending</option>
+                            <option value="Accepted">Accepted</option>
                             <option value="Completed">Completed</option>
                         </select>
                     </div>

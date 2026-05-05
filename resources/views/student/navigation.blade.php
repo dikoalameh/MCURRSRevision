@@ -15,60 +15,263 @@
         </div>
         <!-- MODAL FORM MAIN CONTENT SCROLLABLE -->
         <div class="h-[400px] overflow-y-auto overflow-x-hidden">
-            <div class="space-y-2">
+            <span class="lg:text-lg sm:text-sm md:text-md font-medium">ERB</span>
+            <div class="space-y-2 mt-2 mb-4">
                 <details class="group border rounded">
                     <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
-                        Item #1
+                        Submission of Document
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             &#11167;
                         </span>
                     </summary>
                     <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
-                        First content.
+                        The ERB staff receives and forwards to ERB Chair the required research documents, which were
+                        reviewed and approved by the Thesis Adviser and verified by the Research Coordinator using an
+                        ERB checklist form.
                     </div>
                 </details>
                 <details class="group border rounded">
                     <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
-                        Item #2
+                        Classification
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             &#11167;
                         </span>
                     </summary>
                     <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
-                        Second content.
+                        The ERB Chair categorizes the protocol as Expedited Review, Full Review, or Exempted
                     </div>
                 </details>
                 <details class="group border rounded">
                     <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
-                        Item #3
+                        Assignement of Reviewers
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             &#11167;
                         </span>
                     </summary>
                     <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
-                        Third content.
+                        The ERB Chair assigns at least 2 primary reviewers and provides them with a communication letter
+                        and evaluation forms 2E and 2J.
                     </div>
                 </details>
                 <details class="group border rounded">
                     <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
-                        Item #4
+                        Primary Review
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             &#11167;
                         </span>
                     </summary>
                     <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
-                        Fourth content.
+                        Primary reviewers evaluate the documents and submit their findings to the ERB Chair within 3
+                        working days.
                     </div>
                 </details>
                 <details class="group border rounded">
                     <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
-                        Item #5
+                        Consolidation and Decision Letter
                         <span class="transition-transform duration-300 group-open:rotate-180">
                             &#11167;
                         </span>
                     </summary>
                     <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
-                        Fifth content.
+                        The ERB Chair consolidates suggestions, recognitions, clarification, and amendment if
+                        applicable. A decision letter is issued to the Principal Investigator (PI) acting as
+                        faculty/student/ external client researcher with one of the following outcomes:
+                        <ul class="list-disc ml-5 mt-2">
+                            <li>Resubmission forms 3A and 3B</li>
+                            <li>Amendment forms 3D and 3E</li>
+                            <li>Certificate of Approval and Ethical Clearance forms 3J and 3O</li>
+                        </ul>
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Principal Investigator (PI) Response
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        The PI responds to the instructions in the decision letter within 48 hours (two working days) by
+                        submitting any required documents.
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Protocol Termination of Continued Review
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        <p>
+                            The ERB terminates the protocol if the PI does not respond within 48 hours.
+                        </p>
+                        <p class="mt-3">
+                            For expedited reviews, resubmissions are reviewed, and results are provided within 1 week.
+                        </p>
+                        <p class="mt-3">
+                            For full reviews, certain cases may require an additional 7 working days, after which
+                            results are sent to the PI.
+                        </p>
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Second Response by PI
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        The PI addresses the second decision letter by submitting the required actions and documents to
+                        the ERB.
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Submission of Documents
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        After the thesis final defense, the PI submits the following to ERB:
+                        <ul class="list-decimal ml-5 mt-2">
+                            <li>Progress Report 3C (1 soft copy and 1 hard copy)</li>
+                            <li>Final Report 3L (1 soft copy and 1 hard copy)</li>
+                            <li>Final Thesis Manuscript (1 soft copy and 2 hard copies)</li>
+                            <li>IMRAD format of Final Thesis (1 soft copy)</li>
+                            <li>Plagiarism certification</li>
+                            <li>Grammar Certification</li>
+                        </ul>
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        The ERB issues the Final Ethical Clearance
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        ERB issues the final ethical clearance after the PI submits all required documents listed in
+                        step no. 10.
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        ERB forwards documents to IRO
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        ERB forwards the IMRAD format, Plagiarism and Grammar Certificates to the Institutional Research
+                        Office (IRO). The IRO will issues Certificate of Originality
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        ERB forwards documents to the Registrar
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        ERB forwards to the Registrar the list of consolidated Final Ethical Clearance issued to the PI
+                        and 1 hard copy of the Final Thesis Manuscript.
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Registrar forwards a copy of the Final Thesis Manuscript to the Library
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        The registrar forwards to the library a hard copy of the Final Thesis Manuscript.
+                    </div>
+                </details>
+            </div>
+            <span class="lg:text-lg sm:text-sm md:text-md font-medium">IACUC</span>
+            <div class="space-y-2 mt-2">
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 1
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        Basic requirements submission to IRO
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 2
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        IACUC Reviews Chapters 1-3 of Protocol
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 3
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        Certificate of Approval from IACUC
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 4
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        BAI Certification
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 5
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        Request to use the Animal Lab Facility (ALF)
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 6
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        Animal Carcass disposal in coordination with the Animal Lab Facility House Manager
+                    </div>
+                </details>
+                <details class="group border rounded">
+                    <summary class="cursor-pointer px-4 py-3 font-medium bg-gray-100 flex justify-between items-center">
+                        Step 7
+                        <span class="transition-transform duration-300 group-open:rotate-180">
+                            &#11167;
+                        </span>
+                    </summary>
+                    <div class="overflow-hidden px-4 py-3 text-gray-700 border-t">
+                        Clean up and sanitation of the ALF by the researchers for IACUC Animal Lab Facility clearance
+                        issuance
                     </div>
                 </details>
             </div>
@@ -163,19 +366,6 @@
                     FAQ
                 </button>
             </li>
-            <!-- <li>
-                <a href="{{ url('/student/settings') }}" class="w-full flex items-center px-2 py-3 border-none no-underline gap-x-3 hover:text-secondary transition-all duration-300 
-                    {{ Request::is('student/settings') ? 'text-secondary' : '' }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-settings-icon lucide-settings">
-                        <path
-                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
-                        <circle cx="12" cy="12" r="3" />
-                    </svg>
-                    Settings
-                </a>
-            </li> -->
         </ul>
     </div>
     <footer class="flex items-center px-3 py-3 border-darkergray border-t">
@@ -281,7 +471,8 @@
                     </a>
                 </li>
                 <li>
-                    <button type="button" onclick="openFaqModal()" class="w-full flex items-center max-sm:text-[15px] px-2 py-3 border-none no-underline gap-x-2 hover:text-secondary transition-all duration-300">
+                    <button type="button" onclick="openFaqModal()"
+                        class="w-full flex items-center max-sm:text-[15px] px-2 py-3 border-none no-underline gap-x-2 hover:text-secondary transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-circle-question-mark-icon lucide-circle-question-mark">

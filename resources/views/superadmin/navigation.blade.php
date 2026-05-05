@@ -33,7 +33,7 @@
                         <path d="m21 22-2.88-2.88" />
                         <circle cx="16" cy="17" r="3" />
                     </svg>
-                    <span class="mr-auto">View Documents</span>
+                    <span class="mr-auto">Review Queue</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chevron-down-icon lucide-chevron-down dropdownArrow transition-transform">
@@ -155,7 +155,7 @@
                     Process Monitoring
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="{{ url('/superadmin/final-completion') }}"
                     class="w-full flex items-center px-2 py-3 border-none no-underline gap-x-3 hover:text-secondary transition-all duration-300 {{ Request::is('superadmin/final-completion') ? 'text-secondary' : '' }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -167,7 +167,7 @@
                     </svg>
                     Final Completion
                 </a>
-            </li>
+            </li> -->
         </ul>
     </div>
     <footer class="flex items-center px-3 py-3 border-darkergray border-t">
@@ -232,7 +232,7 @@
                             <path d="m21 22-2.88-2.88" />
                             <circle cx="16" cy="17" r="3" />
                         </svg>
-                        <span class="mr-auto">View Documents</span>
+                        <span class="mr-auto">Review Queue</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-chevron-down-icon lucide-chevron-down dropdownArrow transition-transform">
@@ -372,7 +372,7 @@
                         Process Monitoring
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ url('/superadmin/final-completion') }}"
                         class="flex items-center max-sm:text-[15px] px-2 py-3 max-sm:py-2.5 border-0 no-underline gap-x-3 cursor-pointer transition-all duration-300 hover:text-secondary {{ Request::is('superadmin/final-completion') ? 'text-secondary' : '' }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -384,7 +384,7 @@
                         </svg>
                         Final Completion
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <footer class="flex items-center px-3 py-3 border-darkergray border-t">

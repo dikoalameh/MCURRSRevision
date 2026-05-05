@@ -33,6 +33,7 @@
                             <option value="Expedite">Expedite</option>
                             <option value="Full Board">Full Board</option>
                             <option value="Exempted">Exempted</option>
+                            <option value="IACUC Review">IACUC Review</option>
                         </select>
                     </div>
                     <!-- CALENDAR FILTERING -->

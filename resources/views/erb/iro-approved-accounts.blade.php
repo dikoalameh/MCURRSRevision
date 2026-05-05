@@ -445,31 +445,6 @@
 
     // Initialize DataTable
     $(document).ready(function () {
-        if ($.fn.dataTable.isDataTable('#myTable')) {
-            $('#myTable').DataTable().destroy();
-        }
-        
-        $('.search-wrapper').empty();
-        
-        $('#myTable').DataTable({
-            responsive: true,
-            paging: false,
-            scrollY: '400px',
-            order: [[0, 'asc']],
-            columns: [
-                { title: "P.I. Name" },
-                { title: "Department" },
-                { title: "Research Title" },
-                { title: "Registration Date" },
-                { title: "Status" }
-            ]
-        });
-
-        const dtSearch = $('#myTable_filter');
-        if (dtSearch.length) {
-            $('.search-wrapper').append(dtSearch);
-        }
-        
         validateSubmitButton();
     });
 </script>

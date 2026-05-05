@@ -182,7 +182,7 @@
             <!-- Table body -->
             <tbody class="text-base/7 max-lg:text-sm/6">
                 @foreach($users as $admin)
-                    <tr data-date="{{ $admin->created_at->format('m-d-Y') }}">
+                    <tr data-date="{{ $admin->created_at->format('Y-m-d') }}">
                         <td>{{ $admin->user_ID }}</td>
                         <td>{{ $admin->user_Fname }} {{ $admin->user_MI ? $admin->user_MI . '.' : '' }}
                             {{ $admin->user_Lname }}
@@ -199,23 +199,22 @@
 <script>
     const fromDate = document.getElementById('fromDate');
     const toDate = document.getElementById('toDate');
-    const roleFilter = document.getElementById('roleFilter');
+    const accountFilter = document.getElementById('roleFilter');
 
     $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
         if (settings.nTable.id !== 'myTable') return true;
 
         const from = fromDate.value;
         const to = toDate.value;
-        const role = roleFilter.value;
+        const account = accountFilter.value;
 
         const row = settings.aoData[dataIndex].nTr;
         const rowDate = row ? row.getAttribute('data-date') : '';
-        const rowRoleFilter = data[3]
+        const rowAccountFilter = data[3]
 
         if (from && rowDate < from) return false;
         if (to && rowDate > to) return false;
-
-        if (role && rowRoleFilter !== role) return false;
+        if (account && rowAccountFilter !== account) return false;
 
         return true;
     });

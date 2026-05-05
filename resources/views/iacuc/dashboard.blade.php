@@ -10,7 +10,7 @@
             <!-- User Account Cards -->
             <div>
                 <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">USERS ACCOUNT</h2>
-                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">{{ $totalUsers }}</h3>
                         <p class="max-xl:text-sm">TOTAL USERS</p>
@@ -29,7 +29,7 @@
             <!-- Research Protocol -->
             <div>
                 <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">RESEARCH PROTOCOL</h2>
-                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">{{ $evaluatedProtocols }}</h3>
                         <p class="max-xl:text-sm">EVALUATED</p>

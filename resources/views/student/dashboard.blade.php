@@ -32,7 +32,7 @@
 
             <!-- Cards -->
             <div>
-                <div class="grid 2xl:grid-cols-4 max-md:grid-cols-1 md:grid-cols-2 max-lg:grid-cols-2 gap-4">
+                <div class="grid 2xl:grid-cols-3 max-md:grid-cols-1 md:grid-cols-2 max-lg:grid-cols-3 gap-4">
                     <!-- Status of Review Card -->
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h2 class="text-[25px] max-2xl:text-[22px] max-sm:text-base font-semibold text-center">
